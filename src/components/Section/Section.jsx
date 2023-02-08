@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import css from './Section.module.css';
 
-const Section =({title, children}) => {
+export default function Section ({title, children}) {
     return (
         <div>
             {<h2 className={css.title}>{title}</h2>}
@@ -14,5 +14,3 @@ Section.propTypes = {
     title: PropTypes.string.isRequired,
     children: PropTypes.node,
 };
-
-export default Section;
